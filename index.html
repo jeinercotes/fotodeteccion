@@ -518,7 +518,7 @@
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
+            gap: 1rem;
         }
 
         .stat-card {
@@ -536,7 +536,7 @@
         }
 
         .stat-number {
-            font-size: 2.75rem;
+            font-size: 2.85rem;
             font-weight: 800;
             color: var(--azul-tecno);
             margin-bottom: 0.3rem;
@@ -1362,7 +1362,7 @@
                     <span class="subtitle">Movilidad Segura</span>
                 </div>
             </a>
-
+<!--
             <nav>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="#inicio" class="nav-link active">Inicio</a></li>
@@ -1374,7 +1374,7 @@
                     <li><a href="#contacto" class="nav-link">Contacto</a></li>
                 </ul>
             </nav>
-
+-->
             <a href="#mapa" class="btn btn-primary" style="display: none; display: md-inline-flex;">
                 <i class="fa-solid fa-magnifying-glass-location"></i> Consultar información
             </a>
@@ -1526,7 +1526,7 @@
                 <!-- Pregunta 1 -->
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <h3>¿Es una foto o qué procedimiento se emplea para el comparendo?</h3>
+                        <h3>¿Cuál es el tipo de evidencia que genera el dispositivo para su validación?</h3>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
                     <div class="accordion-content">
@@ -1556,7 +1556,7 @@
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
                     <div class="accordion-content">
-                        <p>En caso de que un conductor se encuentre detenido ante un semáforo en rojo y sea necesario realizar una maniobra para facilitar el paso de una ambulancia u otro vehículo de emergencia, la situación será objeto de verificación por parte del agente de tránsito, teniendo en cuenta las circunstancias particulares y la necesidad de garantizar la prioridad del vehículo de emergencia.</p>
+                        <p>En caso de que un conductor se encuentre detenido ante un semáforo en rojo y sea necesario realizar una maniobra para facilitar el paso de una ambulancia u otro vehículo de emergencia, la situación será objeto de verificación por parte del agente de tránsito, para determinar si la conducta genera una sanción o No, teniendo en cuenta las circunstancias particulares y la necesidad de garantizar la prioridad del vehículo de emergencia.</p>
                         <p>Cuando la maniobra realizada corresponda exclusivamente a una acción necesaria para permitir el paso seguro del vehículo de emergencia, dicha circunstancia deberá ser considerada dentro del proceso de validación de la evidencia.</p>
                         <p>No obstante, una vez haya pasado el vehículo de emergencia y desaparezca la situación que motivó la maniobra, el conductor deberá permanecer detenido hasta que la señal de tránsito le permita continuar. Continuar la marcha atravesando el semáforo en rojo, sin que exista una circunstancia que lo justifique, podría configurar una infracción de tránsito.</p>
                     </div>
@@ -1570,7 +1570,7 @@
                     </div>
                     <div class="accordion-content">
                         <p>Sí. Los sistemas de detección electrónica pueden operar durante las 24 horas del día, incluyendo el horario nocturno, siempre que se encuentren técnicamente habilitados y dentro de las condiciones de operación y autorización correspondientes.</p>
-                        <p>Durante la jornada nocturna, el sistema continúa realizando la captura de evidencia de las posibles infracciones mediante los mecanismos tecnológicos disponibles. Las evidencias obtenidas no generan automáticamente una sanción, sino que deben ser sometidas al correspondiente proceso de validación por parte del agente de tránsito competente.</p>
+                        <p>Durante la jornada nocturna, el sistema continúa realizando la captura de evidencia de las posibles infracciones mediante los mecanismos tecnológicos disponibles. Las evidencias obtenidas no generan automáticamente una sanción, sino que serán sometidas al correspondiente proceso de validación por parte del agente de tránsito competente.</p>
                         <p>Por lo tanto, una infracción detectada durante horas nocturnas puede ser objeto de validación y, de determinarse su procedencia, dar lugar al respectivo comparendo conforme al procedimiento establecido.</p>
                     </div>
                 </div>
@@ -1613,22 +1613,26 @@
 
     <!-- ==========================================================================
        7. SECCIÓN DE VIDEOS INFORMATIVOS
-       ========================================================================== -->
+       ========================================================================== 
     <section id="videos" class="section-padding">
         <div class="container">
             <div class="section-header">
                 <span class="tag">Centro Multimedia</span>
                 <h2>Videos Informativos</h2>
             </div>
+            <div>
+            <iframe width="325" height="578" src="https://www.youtube.com/embed/HgaONCPttV0" title="🚦 Valledupar Evoluciona: Más Tecnología, Más Seguridad Vial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HgaONCPttV0?si=rNq12N5wiyiQDpnX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             <div class="videos-grid" id="videosContainer">
-
+-->
                 
-                <!-- JS insertará los 6 videos aquí dinámicamente -->
+                <!-- JS insertará los 6 videos aquí dinámicamente 
             </div>
         </div>
     </section>
-
+-->
     <!-- ==========================================================================
        8. SECCIÓN DE RESOLUCIONES Y DOCUMENTOS
        ========================================================================== -->
@@ -1711,20 +1715,16 @@
             /* ----------------------------------------------------------------------
                B. ARREGLO DE VIDEOS INFORMATIVOS
                ---------------------------------------------------------------------- */
-            const videosData = [
-                { id: "1", titulo: "🚦 Valledupar Evoluciona: Más Tecnología, Más Seguridad Vial", duracion: "01:03", categoria: "Fotodeteccion", desc: "Valledupar evoluciona hacia una movilidad más segura, organizada y tecnológica. 🚦📍Este es la transformación de una intersección vial y cómo la implementación de nuevas tecnologías contribuye al control, la movilidad y la seguridad de todos los actores viales", embed: "https://www.youtube.com/embed/HgaONCPttV0" },
+         /*   const videosData = [
+                { id: "1", titulo: "🚦 Valledupar Evoluciona: Más Tecnología, Más Seguridad Vial", duracion: "01:03", categoria: "Fotodeteccion", desc: "Valledupar evoluciona hacia una movilidad más segura, organizada y tecnológica. 🚦📍Este es la transformación de una intersección vial y cómo la implementación de nuevas tecnologías contribuye al control, la movilidad y la seguridad de todos los actores viales", embed: "https://www.youtube.com/embed/HgaONCPttV0?si=rNq12N5wiyiQDpnX" },
 
 
 
                 { id: "2", titulo: "Proceso de validación de una infracción", duracion: "03:10", categoria: "Procedimiento", desc: "Rol crucial del agente de tránsito en el proceso de revisión.", embed: "https://www.youtube.com/embed/7mRuGAnzmfo" },
 
-             /*   { id: "3", titulo: "Evidencia audiovisual y garantías", duracion: "01:55", categoria: "Legal", desc: "Conoce los elementos que componen el registro audiovisual probatorio.", embed: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-
-                { id: "4", titulo: "Seguridad vial y prevención", duracion: "04:00", categoria: "Prevención", desc: "El impacto de la detección electrónica en la disminución de accidentes.", embed: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-                { id: "5", titulo: "Vehículos de emergencia y fotodetección", duracion: "02:15", categoria: "Casos Especiales", desc: "Qué hacer ante el paso de ambulancias u otros vehículos prioritarios.", embed: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-                { id: "6", titulo: "Preguntas frecuentes explicadas", duracion: "05:20", categoria: "Ciudadanía", desc: "Respuestas a las dudas más comunes de los conductores.", embed: "https://www.youtube.com/embed/dQw4w9WgXcQ" } 
-                 */ 
-            ];
+                
+                 
+            ]; */
 
             /* ----------------------------------------------------------------------
                C. ARREGLO DE RESOLUCIONES (REEMPLAZAR RUTA PDF POR DOCUMENTOS REALES)
