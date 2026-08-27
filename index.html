@@ -115,9 +115,9 @@
             display: inline-block;
             padding: 0.2rem 1rem;
             background-color: var(--azul-claro);
-            color: var(--azul-tecno);
+            color: var(--activo);
             font-weight: 600;
-            font-size: 0.85rem;
+            font-size: 1.8rem;
             border-radius: 50px;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -198,7 +198,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: rgba(255, 255, 255, 0.95);
+            background-color: rgb(3, 29, 160);
             backdrop-filter: blur(10px);
             box-shadow: var(--shadow-sm);
             z-index: 1000;
@@ -209,7 +209,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            height: 80px;
+            height: 100px;
         }
 
         .logo-container {
@@ -239,14 +239,14 @@
         .logo-text .title {
             font-weight: 800;
             font-size: 1.2rem;
-            color: var(--azul-oscuro);
+            color: var(--blanco);
             letter-spacing: -0.5px;
             line-height: 1;
         }
 
         .logo-text .subtitle {
             font-size: 0.72rem;
-            color: var(--azul-tecno);
+            color: var(--activo);
             font-weight: 600;
             letter-spacing: 1.5px;
             text-transform: uppercase;
@@ -286,99 +286,13 @@
             width: 100%;
         }
 
-        .hamburger {
-            display: none;
-            cursor: pointer;
-            font-size: 1.5rem;
-            color: var(--azul-oscuro);
-            background: none;
-            padding: 0.5rem;
-        }
+    
 
-        /* ==========================================================================
-           3. HERO PRINCIPAL
-           ========================================================================== */
-        .hero {
-            background: linear-gradient(135deg, var(--azul-oscuro) 0%, #0F2B52 100%);
-            color: var(--blanco);
-            padding: 6rem 0 7rem;
-            position: relative;
-            overflow: hidden;
-        }
+        
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -100px;
-            right: -100px;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(20, 108, 255, 0.15) 0%, rgba(0,0,0,0) 70%);
-            border-radius: 50%;
-            pointer-events: none;
-        }
+       
 
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1.1fr 0.9fr;
-            gap: 3.5rem;
-            align-items: center;
-        }
-
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.4rem 1rem;
-            background-color: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 50px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            margin-bottom: 1.5rem;
-            backdrop-filter: blur(5px);
-        }
-
-        .hero-badge i {
-            color: var(--verde-exito);
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            line-height: 1.15;
-            margin-bottom: 1.25rem;
-            letter-spacing: -0.5px;
-        }
-
-        .hero p {
-            font-size: 1.15rem;
-            color: #C0D2EB;
-            margin-bottom: 2rem;
-            line-height: 1.6;
-            max-width: 90%;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .hero-visual {
-            position: relative;
-        }
-
-        .hero-card-img {
-            background-color: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: var(--radius-lg);
-            padding: 1.5rem;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(10px);
-            position: relative;
-        }
-
+     
         /* Ilustración CSS / Simulación de Tecnología de Cámara */
         .cam-graphic {
             width: 100%;
@@ -441,122 +355,7 @@
         .tag-1 { top: 20px; left: 20px; color: var(--verde-exito); }
         .tag-2 { bottom: 20px; right: 20px; color: #FFB300; }
 
-        /* ==========================================================================
-           4. SECCIÓN ¿CÓMO FUNCIONA? (PASOS)
-           ========================================================================== */
-        .process-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1.5rem;
-            position: relative;
-        }
-
-        .process-card {
-            background-color: var(--blanco);
-            border-radius: var(--radius-md);
-            padding: 2rem 1.5rem;
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--gris-medio);
-            position: relative;
-            transition: var(--transition-fast);
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-
-        .process-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-md);
-            border-color: var(--azul-tecno);
-        }
-
-        .step-number {
-            position: absolute;
-            top: -15px;
-            right: 20px;
-            background: var(--azul-oscuro);
-            color: var(--blanco);
-            font-weight: 800;
-            font-size: 0.85rem;
-            padding: 0.2rem 0.7rem;
-            border-radius: 20px;
-        }
-
-        .process-icon {
-            width: 60px;
-            height: 60px;
-            background-color: var(--azul-claro);
-            color: var(--azul-tecno);
-            border-radius: var(--radius-sm);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.6rem;
-            margin-bottom: 1.25rem;
-        }
-
-        .process-card h3 {
-            font-size: 1.15rem;
-            color: var(--azul-oscuro);
-            margin-bottom: 0.75rem;
-            font-weight: 700;
-        }
-
-        .process-card p {
-            font-size: 0.92rem;
-            color: #546E7A;
-            line-height: 1.5;
-        }
-
-        /* ==========================================================================
-           5. ESTADÍSTICAS E INDICADORES
-           ========================================================================== */
-        .stats-section {
-            background-color: var(--azul-oscuro);
-            color: var(--blanco);
-            padding: 1rem 0;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1rem;
-        }
-
-        .stat-card {
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: var(--radius-md);
-            padding: 2rem 1.5rem;
-            text-align: center;
-            transition: var(--transition-fast);
-        }
-
-        .stat-card:hover {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: var(--azul-tecno);
-        }
-
-        .stat-number {
-            font-size: 2.85rem;
-            font-weight: 800;
-            color: var(--azul-tecno);
-            margin-bottom: 0.3rem;
-            display: block;
-        }
-
-        .stat-label {
-            font-size: 0.95rem;
-            color: #B0BEC5;
-            font-weight: 500;
-        }
-
-        .stat-disclaimer {
-            margin-top: 2rem;
-            font-size: 0.8rem;
-            color: #78909C;
-            text-align: center;
-        }
+        
 
         /* ==========================================================================
            6. PREGUNTAS FRECUENTES (FAQ + SEARCH)
@@ -592,77 +391,8 @@
             font-size: 1.1rem;
         }
 
-        .accordion {
-            max-width: 850px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .accordion-item {
-            background-color: var(--blanco);
-            border: 1px solid var(--gris-medio);
-            border-radius: var(--radius-md);
-            overflow: hidden;
-            box-shadow: var(--shadow-sm);
-            transition: var(--transition-fast);
-        }
-
-        .accordion-header {
-            padding: 1.25rem 1.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            cursor: pointer;
-            background-color: var(--blanco);
-            user-select: none;
-            transition: var(--transition-fast);
-        }
-
-        .accordion-header h3 {
-            font-size: 1.05rem;
-            color: var(--azul-oscuro);
-            font-weight: 600;
-            padding-right: 1rem;
-        }
-
-        .accordion-header i {
-            color: var(--azul-tecno);
-            font-size: 1.1rem;
-            transition: transform 0.3s ease;
-        }
-
-        .accordion-item.active .accordion-header {
-            background-color: var(--azul-claro);
-        }
-
-        .accordion-item.active .accordion-header i {
-            transform: rotate(180deg);
-        }
-
-        .accordion-content {
-            max-height: 0;                 
-            overflow: auto;
-            transition: max-height 0.35s ease-out, padding 0.35s ease;
-            background-color: var(--blanco);
-        }
-
-        .accordion-item.active .accordion-content {
-            padding: 1.5rem;
-            border-top: 1px solid rgba(20, 108, 255, 0.1);
-        }
-
-        .accordion-content p {
-            color: #455A64;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            margin-bottom: 0.8rem;
-        }
-
-        .accordion-content p:last-child {
-            margin-bottom: 0;
-        }
+      
+       
 
         /* ==========================================================================
            7. MAPA DE GEOREFERENCIACIÓN (LEAFLET)
@@ -792,115 +522,6 @@
             color: #37474F;
         }
 
-        /* ==========================================================================
-           8. SECCIÓN DE VIDEOS INFORMATIVOS
-           ========================================================================== */
-        .videos-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.75rem;
-        }
-
-        .video-card {
-            background: var(--blanco);
-            border-radius: var(--radius-md);
-            overflow: hidden;
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--gris-medio);
-            transition: var(--transition-fast);
-            display: flex;
-            flex-direction: column;
-        }
-
-        .video-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-md);
-        }
-
-        .video-thumb {
-            position: relative;
-            height: 180px;
-            background-color: var(--azul-oscuro);
-            cursor: pointer;
-            overflow: hidden;
-        }
-
-        .video-thumb img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0.8;
-            transition: var(--transition-normal);
-        }
-     
-        .video-card:hover .video-thumb img {
-            transform: scale(1.05);
-            opacity: 0.9;
-        }
-
-        .play-btn {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 50px;
-            height: 50px;
-            background: var(--azul-tecno);
-            color: var(--blanco);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            transition: var(--transition-fast);
-        }
-
-        .video-card:hover .play-btn {
-            transform: translate(-50%, -50%) scale(1.15);
-            background-color: var(--azul-hover);
-        }
-
-        .video-badge {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            background: rgba(0, 0, 0, 0.75);
-            color: var(--blanco);
-            font-size: 0.72rem;
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
-            font-weight: 600;
-        }
-
-        .video-info {
-            padding: 1.25rem;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-
-        .video-category {
-            font-size: 0.75rem;
-            color: var(--azul-tecno);
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 0.4rem;
-        }
-
-        .video-info h3 {
-            font-size: 1.05rem;
-            color: var(--azul-oscuro);
-            margin-bottom: 0.5rem;
-            line-height: 1.35;
-        }
-
-        .video-info p {
-            font-size: 0.85rem;
-            color: #546E7A;
-            line-height: 1.5;
-        }
 
         /* ==========================================================================
            9. SECCIÓN DE RESOLUCIONES Y DOCUMENTOS
@@ -990,318 +611,8 @@
             flex: 1;
         }
 
-        /* ==========================================================================
-           10. TRANSPARENCIA
-           ========================================================================== */
-        .transparency-box {
-            background: linear-gradient(135deg, var(--azul-claro) 0%, #FFFFFF 100%);
-            border: 1px solid rgba(20, 108, 255, 0.2);
-            border-radius: var(--radius-lg);
-            padding: 3rem 2rem;
-        }
-
-        .transparency-lead {
-            max-width: 800px;
-            margin: 0 auto 2.5rem;
-            text-align: center;
-            font-size: 1.05rem;
-            color: var(--azul-oscuro);
-            line-height: 1.7;
-        }
-
-        .transparency-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-        }
-
-        .transparency-card {
-            background: var(--blanco);
-            padding: 1.75rem;
-            border-radius: var(--radius-md);
-            border: 1px solid var(--gris-medio);
-            box-shadow: var(--shadow-sm);
-            text-align: center;
-        }
-
-        .transparency-card i {
-            font-size: 2.2rem;
-            color: var(--azul-tecno);
-            margin-bottom: 1rem;
-        }
-
-        .transparency-card h3 {
-            font-size: 1.1rem;
-            color: var(--azul-oscuro);
-            margin-bottom: 0.5rem;
-        }
-
-        .transparency-card p {
-            font-size: 0.88rem;
-            color: #546E7A;
-        }
-
-        /* ==========================================================================
-           11. SECCIÓN CONTACTO
-           ========================================================================== */
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: 2.5rem;
-        }
-
-        .contact-info {
-            background-color: var(--azul-oscuro);
-            color: var(--blanco);
-            padding: 2.5rem;
-            border-radius: var(--radius-lg);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .contact-info h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .contact-info p {
-            color: #B0BEC5;
-            font-size: 0.95rem;
-            margin-bottom: 2rem;
-        }
-
-        .info-list {
-            display: flex;
-            flex-direction: column;
-            gap: 1.25rem;
-        }
-
-        .info-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-        }
-
-        .info-item i {
-            width: 36px;
-            height: 36px;
-            background: rgba(255, 255, 255, 0.1);
-            color: var(--azul-tecno);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1rem;
-            flex-shrink: 0;
-        }
-
-        .info-item div span {
-            display: block;
-            font-size: 0.75rem;
-            color: #90A4AE;
-            text-transform: uppercase;
-        }
-
-        .info-item div p {
-            margin: 0;
-            color: var(--blanco);
-            font-weight: 500;
-            font-size: 0.95rem;
-        }
-
-        .contact-form-container {
-            background-color: var(--blanco);
-            padding: 2.5rem;
-            border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--gris-medio);
-        }
-
-        .form-group {
-            margin-bottom: 1.25rem;
-        }
-
-        .form-group label {
-            display: block;
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--azul-oscuro);
-            margin-bottom: 0.4rem;
-        }
-
-        .form-control {
-            width: 100%;
-            padding: 0.75rem 1rem;
-            border-radius: var(--radius-sm);
-            border: 1px solid var(--gris-medio);
-            font-size: 0.9rem;
-            transition: var(--transition-fast);
-        }
-
-        .form-control:focus {
-            border-color: var(--azul-tecno);
-            box-shadow: 0 0 0 3px rgba(20, 108, 255, 0.15);
-        }
-
-        textarea.form-control {
-            resize: vertical;
-            min-height: 100px;
-        }
-
-        /* ==========================================================================
-           12. FOOTER
-           ========================================================================== */
-        footer {
-            background-color: #061224;
-            color: #8197B4;
-            padding: 4rem 0 2rem;
-            border-top: 1px solid rgba(255,255,255,0.05);
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1.5fr;
-            gap: 2.5rem;
-            margin-bottom: 3rem;
-        }
-
-        .footer-brand h4 {
-            color: var(--blanco);
-            font-size: 1.2rem;
-            margin-bottom: 0.8rem;
-        }
-
-        .footer-brand p {
-            font-size: 0.88rem;
-            line-height: 1.6;
-        }
-
-        .footer-title {
-            color: var(--blanco);
-            font-size: 0.95rem;
-            font-weight: 700;
-            margin-bottom: 1.2rem;
-        }
-
-        .footer-links {
-            display: flex;
-            flex-direction: column;
-            gap: 0.6rem;
-        }
-
-        .footer-links a {
-            font-size: 0.88rem;
-        }
-
-        .footer-links a:hover {
-            color: var(--blanco);
-        }
-
-        .footer-bottom {
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 0.82rem;
-        }
-
-        /* ==========================================================================
-           13. MODALES & BOTÓN BACK TO TOP
-           ========================================================================== */
-        .modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(11, 31, 58, 0.85);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 2000;
-            opacity: 0;
-            visibility: hidden;
-            transition: var(--transition-fast);
-            backdrop-filter: blur(5px);
-            padding: 1rem;
-        }
-
-        .modal.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .modal-content {
-            background: var(--blanco);
-            width: 100%;
-            max-width: 800px;
-            border-radius: var(--radius-md);
-            overflow: hidden;
-            position: relative;
-            box-shadow: var(--shadow-lg);
-        }
-
-        .modal-close {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            width: 35px;
-            height: 35px;
-            background: rgba(0,0,0,0.5);
-            color: var(--blanco);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            z-index: 10;
-            transition: var(--transition-fast);
-        }
-
-        .modal-close:hover { background: var(--rojo-alerta); }
-
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-
-        .back-to-top {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            width: 45px;
-            height: 45px;
-            background-color: var(--azul-tecno);
-            color: var(--blanco);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.1rem;
-            cursor: pointer;
-            box-shadow: var(--shadow-md);
-            opacity: 0;
-            visibility: hidden;
-            transition: var(--transition-fast);
-            z-index: 999;
-        }
-
-        .back-to-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
+       
+       
 
         /* ==========================================================================
            14. DISEÑO RESPONSIVE (MEDIA QUERIES)
@@ -1345,6 +656,18 @@
             .hero-buttons { flex-direction: column; width: 100%; }
             .hero-buttons .btn { width: 100%; }
         }
+        .mi-boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.mi-boton:hover {
+  background-color: #0056b3;
+}
+
    
 </style>
 <body>
@@ -1354,230 +677,25 @@
        ========================================================================== -->
     <header class="navbar">
         <div class="container navbar-container">
-            <a href="#" class="logo-container">
-                <!-- MODIFICAR: Reemplazar icono o SVG con el logo institucional oficial -->
-                <div class="logo-icon">
-                    <i class="fa-solid fa-camera-web"></i>
-                </div>
+            
+                
+            
                 <div class="logo-text">
-                    <span class="title">FOTODETECCIÓN</span>
+                    <span class="title">MAPA DE PUNTOS FOTODETECCIÓN</span>
                     <span class="subtitle">Movilidad Segura</span>
                 </div>
             </a>
-<!--
-            <nav>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
-                    <li><a href="#como-funciona" class="nav-link">¿Cómo funciona?</a></li>
-                    <li><a href="#faq" class="nav-link">Preguntas frecuentes</a></li>
-                    <li><a href="#mapa" class="nav-link">Mapa de detección</a></li>
-                    <li><a href="#videos" class="nav-link">Videos</a></li>
-                    <li><a href="#resoluciones" class="nav-link">Resoluciones</a></li>
-                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
-                </ul>
-            </nav>
--->
-            <a href="#mapa" class="btn btn-primary" style="display: none; display: md-inline-flex;">
-                <i class="fa-solid fa-magnifying-glass-location"></i> Consultar información
-            </a>
-
-            <button class="hamburger" id="hamburgerBtn" aria-label="Abrir Menú">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </div>
+        
     </header>
 
-    <!-- ==========================================================================
-       2. HERO PRINCIPAL
-       ========================================================================== -->
-    <section id="inicio" class="hero">
-        <div class="container hero-grid">
-            <div class="hero-text">
-                <div class="hero-badge">
-                    <i class="fa-solid fa-shield-halved"></i>
-                    <span>Portal Informativo Oficial</span>
-                </div>
-                <h1>Fotodetección: tecnología para una movilidad más segura</h1>
-                <p>Conoce cómo funciona el sistema de detección electrónica, el proceso de validación de las infracciones y las ubicaciones de los puntos de fotodetección.</p>
-                <div class="hero-buttons">
-                    <a href="#como-funciona" class="btn btn-primary">
-                        <i class="fa-solid fa-circle-info"></i> Conocer el proceso
-                    </a>
-                    <a href="#mapa" class="btn btn-outline-white">
-                        <i class="fa-solid fa-map-location-dot"></i> Ver mapa de detección
-                    </a>
-                </div>
-            </div>
-
-            <div class="hero-visual">
-                <div class="hero-card-img">
-                    <div class="cam-graphic">
-                        <div class="radar-sweep"></div>
-                        <div class="cam-icon-box">
-                            <i class="fa-solid fa-video"></i>
-                        </div>
-                        <div class="floating-tag tag-1">
-                            <i class="fa-solid fa-check-circle"></i> Sistema Activo 24/7
-                        </div>
-                        <div class="floating-tag tag-2">
-                            <i class="fa-solid fa-user-check"></i> Validado por Agente
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==========================================================================
-       3. SECCIÓN ¿CÓMO FUNCIONA LA FOTODETECCIÓN?
-       ========================================================================== -->
-    <section id="como-funciona" class="section-padding">
-        <div class="container">
-            <div class="section-header">
-                <span class="tag">Transparencia en el Proceso</span>
-                <h2>¿Cómo funciona la fotodetección?</h2>
-                <p>El sistema opera bajo un riguroso esquema tecnológico y legal estructurado en 4 etapas garantizando la revisión humana competente.</p>
-            </div>
-
-            <div class="process-grid">
-                <div class="process-card">
-                    <span class="step-number">Paso 1</span>
-                    <div class="process-icon">
-                        <i class="fa-solid fa-video"></i>
-                    </div>
-                    <h3>Detección</h3>
-                    <p>El sistema tecnológico detecta una posible infracción y genera evidencia audiovisual automática en tiempo real.</p>
-                </div>
-
-                <div class="process-card">
-                    <span class="step-number">Paso 2</span>
-                    <div class="process-icon">
-                        <i class="fa-solid fa-film"></i>
-                    </div>
-                    <h3>Registro de evidencia</h3>
-                    <p>La información queda asociada al evento detectado, incluyendo los elementos técnicos disponibles para su posterior análisis.</p>
-                </div>
-
-                <div class="process-card">
-                    <span class="step-number">Paso 3</span>
-                    <div class="process-icon">
-                        <i class="fa-solid fa-user-shield"></i>
-                    </div>
-                    <h3>Validación</h3>
-                    <p>Un agente de tránsito competente revisa la evidencia y determina si la conducta observada corresponde a una infracción.</p>
-                </div>
-
-                <div class="process-card">
-                    <span class="step-number">Paso 4</span>
-                    <div class="process-icon">
-                        <i class="fa-solid fa-file-invoice"></i>
-                    </div>
-                    <h3>Comparendo</h3>
-                    <p>Cuando se determina la procedencia de la actuación, se continúa con el procedimiento establecido para la elaboración y notificación del comparendo.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==========================================================================
-       4. ESTADÍSTICAS E INDICADORES
-       ========================================================================== -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <span class="stat-number" data-target="16">15</span>
-                    <span class="stat-label">Puntos de fotodetección</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number">24/7</span>
-                    <span class="stat-label">Disponibilidad del sistema</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number" data-target="8">8</span>
-                    <span class="stat-label">Resoluciones disponibles</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Validación por agente competente</span>
-                </div>
-            </div>
-            <!-- NOTA INSTITUCIONAL: Mantener la aclaración si son datos de muestra 
-            <p class="stat-disclaimer">* EJEMPLO – REEMPLAZAR POR INFORMACIÓN OFICIAL Y CIFRAS OPERATIVAS VIGENTES</p>
-            -->
-        </div>
-    </section>
 
     <!-- ==========================================================================
        5. PREGUNTAS FRECUENTES (FAQ)
        ========================================================================== -->
-    <section id="faq" class="section-padding">
-        <div class="container">
-            <div class="section-header">
-                <span class="tag">Resolución de Dudas</span>
-                <h2>Preguntas frecuentes sobre fotodetección</h2>
-                <p>Encuentra respuestas claras sobre los procedimientos, tiempos legales y normatividad vigente.</p>
-            </div>
-
-          <!----> <div class="faq-search-box">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" id="faqSearch" placeholder="¿No encuentras tu pregunta? Busca términos como 'ambulancia', 'tiempo'...">
-            </div> 
-
-            <div class="accordion" id="faqAccordion">
-                <!-- Pregunta 1 -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <h3>¿Cuál es el tipo de evidencia que genera el dispositivo para su validación?</h3>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                    <div class="accordion-content">
-                        <p>La detección de una posible infracción no se limita únicamente a una fotografía. El sistema de detección genera y conserva evidencia audiovisual de la presunta infracción, la cual es posteriormente objeto de revisión y validación por parte de un agente de tránsito competente.</p>
-                        <p>El agente verifica el material probatorio, identifica las circunstancias en las que ocurrieron los hechos y determina si la conducta observada corresponde efectivamente a una infracción de tránsito. Una vez realizada esta validación y de encontrarse configurada la infracción, se procede conforme al procedimiento legal establecido para la elaboración y posterior notificación del comparendo.</p>
-                        <p>Por lo tanto, la evidencia tecnológica constituye un elemento de soporte para la actuación administrativa, pero la validación de la presunta infracción corresponde al agente de tránsito dentro de sus competencias.</p>
-                    </div>
-                </div>
-
-                <!-- Pregunta 2 -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <h3>¿Cuál es el tiempo de validación del comparendo?</h3>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                    <div class="accordion-content">
-                        <p>El material correspondiente a una posible infracción debe ser sometido al proceso de validación por parte del agente de tránsito dentro del término establecido para tal procedimiento. En este proceso, el agente revisa la evidencia disponible y determina si los hechos registrados constituyen una infracción de tránsito.</p>
-                        <p>Para este procedimiento se contempla un término de hasta diez (10) días hábiles para la validación de la evidencia y determinación de la procedencia de la actuación, según lo establecido en la resolución 2020304001245 de 2020 en el articulo 18 en corcondancia con articulo 8 de la ley 1843 de 2017.</p>
-                        <p>Una vez validada la infracción, la generación y notificación del comparendo se realiza conforme a los términos, condiciones y mecanismos establecidos por la normatividad vigente, por lo que el término de validación no debe confundirse con el término legal de notificación al presunto infractor.</p>
-                    </div>
-                </div>
-
-                <!-- Pregunta 3 -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <h3>¿Qué pasa si dejo pasar una ambulancia en un semáforo en rojo?</h3>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                    <div class="accordion-content">
-                        <p>En caso de que un conductor se encuentre detenido ante un semáforo en rojo y sea necesario realizar una maniobra para facilitar el paso de una ambulancia u otro vehículo de emergencia, la situación será objeto de verificación por parte del agente de tránsito, para determinar si la conducta genera una sanción o No, teniendo en cuenta las circunstancias particulares y la necesidad de garantizar la prioridad del vehículo de emergencia.</p>
-                        <p>Cuando la maniobra realizada corresponda exclusivamente a una acción necesaria para permitir el paso seguro del vehículo de emergencia, dicha circunstancia deberá ser considerada dentro del proceso de validación de la evidencia.</p>
-                        <p>No obstante, una vez haya pasado el vehículo de emergencia y desaparezca la situación que motivó la maniobra, el conductor deberá permanecer detenido hasta que la señal de tránsito le permita continuar. Continuar la marcha atravesando el semáforo en rojo, sin que exista una circunstancia que lo justifique, podría configurar una infracción de tránsito.</p>
-                    </div>
-                </div>
-
-                <!-- Pregunta 4 -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <h3>¿Habrá fotodetección durante las horas nocturnas?</h3>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                    <div class="accordion-content">
-                        <p>Sí. Los sistemas de detección electrónica pueden operar durante las 24 horas del día, incluyendo el horario nocturno, siempre que se encuentren técnicamente habilitados y dentro de las condiciones de operación y autorización correspondientes.</p>
-                        <p>Durante la jornada nocturna, el sistema continúa realizando la captura de evidencia de las posibles infracciones mediante los mecanismos tecnológicos disponibles. Las evidencias obtenidas no generan automáticamente una sanción, sino que serán sometidas al correspondiente proceso de validación por parte del agente de tránsito competente.</p>
-                        <p>Por lo tanto, una infracción detectada durante horas nocturnas puede ser objeto de validación y, de determinarse su procedencia, dar lugar al respectivo comparendo conforme al procedimiento establecido.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="faq">
+   
+                <div id="faqSearch" ></div>
+  
     </section>
 
     <!-- ==========================================================================
@@ -1587,11 +705,13 @@
         <div class="container">
             <div class="section-header">
                 <span class="tag">Geolocalización Técnica</span>
-                <h2>Mapa de puntos de fotodetección</h2>
+                
                 <p>Consulta la ubicación de los puntos de detección electrónica habilitados.</p>
             </div>
 
             <div class="map-section-grid">
+
+                <div id="map"></div>
                 <!-- Panel Lateral de Puntos -->
                 <div class="map-sidebar">
                     <div class="map-controls">
@@ -1608,37 +728,12 @@
                 </div>
 
                 <!-- Contenedor Mapa Leaflet -->
-                <div id="map"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==========================================================================
-       7. SECCIÓN DE VIDEOS INFORMATIVOS
-       ========================================================================== 
-    <section id="videos" class="section-padding">
-        <div class="container">
-            <div class="section-header">
-                <span class="tag">Centro Multimedia</span>
-                <h2>Videos Informativos</h2>
-            </div>
-            <div>
-            <iframe width="325" height="578" src="https://www.youtube.com/embed/HgaONCPttV0" title="🚦 Valledupar Evoluciona: Más Tecnología, Más Seguridad Vial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/HgaONCPttV0?si=rNq12N5wiyiQDpnX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class="videos-grid" id="videosContainer">
--->
                 
-                <!-- JS insertará los 6 videos aquí dinámicamente 
             </div>
         </div>
     </section>
--->
-    <!-- ==========================================================================
-       8. SECCIÓN DE RESOLUCIONES Y DOCUMENTOS
-       ========================================================================== -->
-    <section id="resoluciones" class="section-padding" style="background-color: var(--blanco);">
+
+<section id="resoluciones" class="section-padding" style="background-color: var(--blanco);">
         <div class="container">
             <div class="section-header">
                 <span class="tag">Marco Legal y Normativo</span>
@@ -1646,24 +741,163 @@
                 <p>Consulta los documentos y resoluciones relacionados con el sistema de fotodetección.</p>
             </div>
 
+             <div class="docs-grid" id="docsContainer">
+              
+                <!-- BATALLON LA POPA -->
+                <div class="doc-card">
+                <div class="doc-header">
+                        <div class="doc-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                        <div class="doc-meta">
+                            <span class="doc-num">Resolución 299</span>
+                            <span class="doc-date">05 de Marzo 2025</span>
+                        </div>
+                    </div>
+                    <h3></h3>
+                    <p>“Por medio de la cual, se adopta una decisión sobre la solicitud de autorización para la instalación de sistemas automáticos, semiautomáticos y otros medios tecnológicos para la detección de presuntas infracciones de tránsito – SAST - Número SOL0000011264 y se toman otras determinaciones”</p>
+                    <div class="doc-actions">
+                        <a href="https://drive.google.com/file/d/1Cs2_2LXhO_vWp9GYXIj6GeDb5p4s7PVM/view?usp=sharing" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-eye"></i> Ver</a>
+                        <a href="https://drive.google.com/file/d/1Cs2_2LXhO_vWp9GYXIj6GeDb5p4s7PVM/view?usp=sharing" download class="btn btn-primary"><i class="fa-solid fa-download"></i> PDF</a>
+                    </div>
+                 </div>
+                 
+
+                 <!-- LA NEVADA -->
+                <div class="doc-card">
+                <div class="doc-header">
+                        <div class="doc-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                        <div class="doc-meta">
+                            <span class="doc-num">Resolución 267</span>
+                            <span class="doc-date">27 de Febrero 2025</span>
+                        </div>
+                    </div>
+                    <h3></h3>
+                    <p>“Por medio de la cual, se adopta una decisión sobre la solicitud de autorización para la instalación de sistemas automáticos, semiautomáticos y otros medios tecnológicos para la detección de presuntas infracciones de tránsito – SAST - Número SOL0000011265 y se toman otras determinaciones”</p>
+                    <div class="doc-actions">
+                        <a href="https://drive.google.com/file/d/12a2-R6Bwr6ZD1n0LiM03gHtfvtTHn-t6/view?usp=drive_link" class="btn btn-secondary"><i class="fa-solid fa-eye"></i> Ver</a>
+                        <a href="https://drive.google.com/file/d/1Cs2_2LXhO_vWp9GYXIj6GeDb5p4s7PVM/view?usp=sharing" download class="btn btn-primary"><i class="fa-solid fa-download"></i> PDF</a>
+                    </div>
+                 </div>
+                
+
+                 <!-- LA VIÑA  -->
+                <div class="doc-card">
+                <div class="doc-header">
+                        <div class="doc-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                        <div class="doc-meta">
+                            <span class="doc-num">Resolución 226 de 2025 - Modificada por la Resolución 1031 de 2025</span>
+                            <span class="doc-date"></span>
+                        </div>
+                    </div>
+                    <h3></h3>
+                    <p>“Por medio de la cual, se adopta una decisión sobre la solicitud de autorización para la instalación de sistemas automáticos, semiautomáticos y otros medios tecnológicos para la detección de presuntas infracciones de tránsito – SAST - Número SOL0000010882 y se toman otras determinaciones”</p>
+                    <div class="doc-actions">
+                        <a href="https://drive.google.com/file/d/1_WM-1EqDklS0766XBH7wCW9LwnTtKjMq/view?usp=drive_link" class="btn btn-secondary"><i class="fa-solid fa-eye"></i> Ver</a>
+                        <a href="https://drive.google.com/file/d/1_WM-1EqDklS0766XBH7wCW9LwnTtKjMq/view?usp=drive_link" download class="btn btn-primary"><i class="fa-solid fa-download"></i> PDF</a>
+                    </div>
+                 </div>
+                 
+
+                 <!-- EL MERCADO  -->
+                <div class="doc-card">
+                <div class="doc-header">
+                        <div class="doc-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                        <div class="doc-meta">
+                            <span class="doc-num">Resolución 225 de 2025 05/04/2024 - Modificada por la Resolución 1030 de 2025</span>
+                            <span class="doc-date"></span>
+                        </div>
+                    </div>
+                    <h3></h3>
+                    <p>“Por medio de la cual, se adopta una decisión sobre la solicitud de autorización para la instalación de sistemas automáticos, semiautomáticos y otros medios tecnológicos para la detección de presuntas infracciones de tránsito –SAST -Número SOL0000010802 y se toman otras determinaciones”</p>
+                    <div class="doc-actions">
+                        <a href="https://drive.google.com/file/d/1rBkxOoi1WA8yMZeCaKPpd6B2EJKQMP_6/view?usp=drive_link" class="btn btn-secondary"><i class="fa-solid fa-eye"></i> Ver</a>
+                        <a href="https://drive.google.com/file/d/1rBkxOoi1WA8yMZeCaKPpd6B2EJKQMP_6/view?usp=drive_link" download class="btn btn-primary"><i class="fa-solid fa-download"></i> PDF</a>
+                    </div>
+                 </div>
+                 
+
+                  <!-- PUNTO DEL LOPERENA  -->
+                <div class="doc-card">
+                <div class="doc-header">
+                        <div class="doc-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                        <div class="doc-meta">
+                            <span class="doc-num">Resolución 214 de 2025 19/02/2025 - Modificada por la Resolución 1028 de 2025</span>
+                            <span class="doc-date"></span>
+                        </div>
+                    </div>
+                    <h3></h3>
+                    <p>“Por medio de la cual, se adopta una decisión sobre la solicitud de autorización para la instalación de sistemas automáticos, semiautomáticos y otros medios tecnológicos para la detección de presuntas infracciones de tránsito – SAST - Número SOL0000010743 y se toman otras determinaciones”</p>
+                    <div class="doc-actions">
+                        <a href="https://drive.google.com/file/d/1TUUsSie8Giq3MsF08T6i_GPsOq171FSG/view?usp=sharing" class="btn btn-secondary"><i class="fa-solid fa-eye"></i> Ver</a>
+                        <a href="https://drive.google.com/file/d/1TUUsSie8Giq3MsF08T6i_GPsOq171FSG/view?usp=sharing" download class="btn btn-primary"><i class="fa-solid fa-download"></i> PDF</a>
+                    </div>
+                 </div>
+                 
+
+                  <!-- LA NEVADA -->
+                <div class="doc-card">
+                <div class="doc-header">
+                        <div class="doc-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                        <div class="doc-meta">
+                            <span class="doc-num">Resolución 196 de 13/02/2025- Modificada por la Resolución 1029 del 2025</span>
+                            <span class="doc-date"></span>
+                        </div>
+                    </div>
+                    <h3></h3>
+                    <p>“Por medio de la cual, se adopta una decisión sobre la solicitud de autorización para la instalación de sistemas automáticos, semiautomáticos y otros medios tecnológicos para la detección de presuntas infracciones de tránsito – SAST - Número SOL0000010785 y se toman otras determinaciones”</p>
+                    <div class="doc-actions">
+                        <a href="https://drive.google.com/file/d/1cVETTw2G1xiaILO0gSKvSUkSjXHNsKfS/view?usp=drive_link" class="btn btn-secondary"><i class="fa-solid fa-eye"></i> Ver</a>
+                        <a href="https://drive.google.com/file/d/1cVETTw2G1xiaILO0gSKvSUkSjXHNsKfS/view?usp=drive_link" download class="btn btn-primary"><i class="fa-solid fa-download"></i> PDF</a>
+                    </div>
+                 </div>
+                 
+
+                  <!-- PUEBLO BELLO -->
+                <div class="doc-card">
+                <div class="doc-header">
+                        <div class="doc-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                        <div class="doc-meta">
+                            <span class="doc-num">Resolución 203</span>
+                            <span class="doc-date">17 de Febrero 2025</span>
+                        </div>
+                    </div>
+                    <h3></h3>
+                    <p>“Por medio de la cual, se adopta una decisión sobre la solicitud de autorización para la instalación de sistemas automáticos, semiautomáticos y otros medios tecnológicos para la detección de presuntas infracciones de tránsito – SAST - Número SOL0000010582 y se toman otras determinaciones”</p>
+                    <div class="doc-actions">
+                        <a href="https://drive.google.com/file/d/1FSRQXcHOphTEbtAr0KMCxihjp5rPU1Bz/view?usp=drive_link" class="btn btn-secondary"><i class="fa-solid fa-eye"></i> Ver</a>
+                        <a href="https://drive.google.com/file/d/1FSRQXcHOphTEbtAr0KMCxihjp5rPU1Bz/view?usp=drive_link" download class="btn btn-primary"><i class="fa-solid fa-download"></i> PDF</a>
+                    </div>
+                 </div>
+                 
+
+                  <!-- LOS MANGUITOS -->
+                <div class="doc-card">
+                <div class="doc-header">
+                        <div class="doc-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                        <div class="doc-meta">
+                            <span class="doc-num">Resolución 224</span>
+                            <span class="doc-date">20 de Febrero 2025</span>
+                        </div>
+                    </div>
+                    <h3></h3>
+                    <p>“Por medio de la cual, se adopta una decisión sobre la solicitud de autorización para la instalación de sistemas automáticos, semiautomáticos y otros medios tecnológicos para la detección de presuntas infracciones de tránsito – SAST -Número SOL0000010402 y se toman otras determinaciones”</p>
+                    <div class="doc-actions">
+                        <a href="https://drive.google.com/file/d/1UwVjD_riEVhvc0FLcGAxCJ7KaITBUtiV/view?usp=drive_link" class="btn btn-secondary"><i class="fa-solid fa-eye"></i> Ver</a>
+                        <a href="https://drive.google.com/file/d/1UwVjD_riEVhvc0FLcGAxCJ7KaITBUtiV/view?usp=drive_link" download class="btn btn-primary"><i class="fa-solid fa-download"></i> PDF</a>
+                    </div>
+                 </div>
+                 
+
+                 
+
+            </div>
+         </div>
+
             <div class="docs-grid" id="docsContainer">
                 <!-- JS insertará las 8 resoluciones aquí dinámicamente -->
             </div>
         </div>
     </section>
-
-   
-    <!-- MODAL DE VIDEOS -->
-    <div class="modal" id="videoModal">
-        <div class="modal-content">
-            <span class="modal-close" id="closeVideoModal">&times;</span>
-            <div class="video-container">
-                <iframe id="videoIframe" width="356" height="634" src= "" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-
-   
+       
     <!-- BOTÓN VOLVER ARRIBA -->
     <div class="back-to-top" id="backToTop">
         <i class="fa-solid fa-arrow-up"></i>
@@ -1711,93 +945,26 @@
                 { id: 14, lat: 10.46141735, lng: -73.25401938, nombre: "RESOLUCIÓN 224 DE 2025 EQUIPO N°021", direccion: "DIAGONAL 21 - CARRERA 19 (SENTIDO SUR - NORTE)", tipo: "Semáforo en Rojo", estado: "Inactivo", horario: "24 Horas" },              
                 { id: 15, lat: 10.46242587, lng: -73.25364062, nombre: "RESOLUCIÓN 224 DE 2025 EQUIPO N°022", direccion: "DIAGONAL 21 - CARRERA 18E (SENTIDO NORTE - SUR)", tipo: "Detección ElectrónicaC02, C03, C24, C29, C35, D02, D04, D05 y C32", estado: "Inactivo", horario: "24 Horas" }
 
-              /*  { id: 16, lat: 10.46242587, lng: -73.25364062, nombre: "Punto de Detección #16", direccion: "Calle 58 con Carrera 45", tipo: "C02, C03, C24, C29, C35, D02, D04, D05 y C32", estado: "Inactivo", horario: "24 Horas" } */
+            
             ];
 
             /* ----------------------------------------------------------------------
                B. ARREGLO DE VIDEOS INFORMATIVOS
                ---------------------------------------------------------------------- */
             const videosData = [ ];
-            /*    { id: "1", titulo: "🚦 Valledupar Evoluciona: Más Tecnología, Más Seguridad Vial", duracion: "01:03", categoria: "Fotodeteccion", desc: "Valledupar evoluciona hacia una movilidad más segura, organizada y tecnológica. 🚦📍Este es la transformación de una intersección vial y cómo la implementación de nuevas tecnologías contribuye al control, la movilidad y la seguridad de todos los actores viales", embed: "https://www.youtube.com/embed/HgaONCPttV0?si=rNq12N5wiyiQDpnX" },
-
-
-
-                { id: "2", titulo: "Proceso de validación de una infracción", duracion: "03:10", categoria: "Procedimiento", desc: "Rol crucial del agente de tránsito en el proceso de revisión.", embed: "https://www.youtube.com/embed/7mRuGAnzmfo" },
-
-                
-                 
+            /*    { id: "1", titulo: "🚦 Valledupar Evoluciona: Más Tecnología, Más Seguridad Vial", duracion: "01:03", categoria: "Fotodeteccion", desc: "Valledupar evoluciona hacia una movilidad más segura, organizada y tecnológica. 🚦📍Este es la transformación de una intersección vial y cómo la implementación de nuevas tecnologías contribuye al control, la movilidad y la seguridad de todos los actores viales", embed: "https://www.youtube.com/embed/HgaONCPttV0?si=rNq12N5wiyiQDpnX" },                 
             ]; */
 
             /* ----------------------------------------------------------------------
                C. ARREGLO DE RESOLUCIONES (REEMPLAZAR RUTA PDF POR DOCUMENTOS REALES)
                ---------------------------------------------------------------------- */
             const resolucionesData = [
-                /* BATALLON LA POPA */
-                { numero: "299 de 2025", titulo: "", fecha: "05/03/2025", descripcion: "“Por medio de la cual, se adopta una decisión sobre la solicitud de autorización para la instalación de sistemas automáticos, semiautomáticos y otros medios tecnológicos para la detección de presuntas infracciones de tránsito – SAST - Número SOL0000011264 y se toman otras determinaciones”", pdf: "https://drive.google.com/file/d/1Cs2_2LXhO_vWp9GYXIj6GeDb5p4s7PVM/view?usp=sharing"},
-
-                /* LA NEVADA */
-                { numero: "267 de 2025", titulo: "", fecha: "27/02/2025", descripcion: "“Por medio de la cual, se adopta una decisión sobre la solicitud de autorización para la instalación de sistemas automáticos, semiautomáticos y otros medios tecnológicos para la detección de presuntas infracciones de tránsito – SAST - Número SOL0000011265 y se toman otras determinaciones”", pdf: "https://drive.google.com/file/d/12a2-R6Bwr6ZD1n0LiM03gHtfvtTHn-t6/view?usp=drive_link" },
-
-                /* LA VIÑA */
-                { numero: "226 de 2025 - Modificada por la Resolución 1031 de 2025", titulo: "", fecha: "20/02/2025", descripcion: "“Por medio de la cual, se adopta una decisión sobre la solicitud de autorización para la instalación de sistemas automáticos, semiautomáticos y otros medios tecnológicos para la detección de presuntas infracciones de tránsito – SAST - Número SOL0000010882 y se toman otras determinaciones”", pdf: "https://drive.google.com/file/d/1_WM-1EqDklS0766XBH7wCW9LwnTtKjMq/view?usp=drive_link" },
-
-                /* EL MERCADO */
-                { numero: "225 de 2025 - Modificada por la Resolución 1030 de 2025", titulo: "", fecha: "05/04/2024", descripcion: "“Por medio de la cual, se adopta una decisión sobre la solicitud de autorización para la instalación de sistemas automáticos, semiautomáticos y otros medios tecnológicos para la detección de presuntas infracciones de tránsito –SAST -Número SOL0000010802 y se toman otras determinaciones”", pdf: "https://drive.google.com/file/d/1rBkxOoi1WA8yMZeCaKPpd6B2EJKQMP_6/view?usp=drive_link" },
-
-                /* PUNTO DEL LOPERENA */
-                { numero: "214 de 2025 - Modificada por la Resolución 1028 de 2025", titulo: "", fecha: "19/02/2025", descripcion: "“Por medio de la cual, se adopta una decisión sobre la solicitud de autorización para la instalación de sistemas automáticos, semiautomáticos y otros medios tecnológicos para la detección de presuntas infracciones de tránsito – SAST - Número SOL0000010743 y se toman otras determinaciones”", pdf: "https://drive.google.com/file/d/1TUUsSie8Giq3MsF08T6i_GPsOq171FSG/view?usp=sharing" },
-
-                /* LA NEVADA */
-                { numero: "196 de 2025 - Modificada por la Resolución 1029 del 2025", titulo: "", fecha: "13/02/2025", descripcion: "“Por medio de la cual, se adopta una decisión sobre la solicitud de autorización para la instalación de sistemas automáticos, semiautomáticos y otros medios tecnológicos para la detección de presuntas infracciones de tránsito – SAST - Número SOL0000010785 y se toman otras determinaciones”", pdf: "https://drive.google.com/file/d/1cVETTw2G1xiaILO0gSKvSUkSjXHNsKfS/view?usp=drive_link" },
-
-                /* PUEBLO BELLO */
-                { numero: "203 de 2025", titulo: "", fecha: "17/02/2025", descripcion: "“Por medio de la cual, se adopta una decisión sobre la solicitud de autorización para la instalación de sistemas automáticos, semiautomáticos y otros medios tecnológicos para la detección de presuntas infracciones de tránsito – SAST - Número SOL0000010582 y se toman otras determinaciones”", pdf: "https://drive.google.com/file/d/1FSRQXcHOphTEbtAr0KMCxihjp5rPU1Bz/view?usp=drive_link" },
-
-                /* LOS MANGUITOS */
-                { numero: "224 de 2025", titulo: "", fecha: "20/02/2025", descripcion: "“Por medio de la cual, se adopta una decisión sobre la solicitud de autorización para la instalación de sistemas automáticos, semiautomáticos y otros medios tecnológicos para la detección de presuntas infracciones de tránsito – SAST -Número SOL0000010402 y se toman otras determinaciones”", pdf: "https://drive.google.com/file/d/1UwVjD_riEVhvc0FLcGAxCJ7KaITBUtiV/view?usp=drive_link" }
+                /* BATALLON LA POPA 
+                { numero: "299 de 2025", titulo: "", fecha: "05/03/2025", descripcion: "“Por medio de la cual, se adopta una decisión sobre la solicitud de autorización para la instalación de sistemas automáticos, semiautomáticos y otros medios tecnológicos para la detección de presuntas infracciones de tránsito – SAST - Número SOL0000011264 y se toman otras determinaciones”", pdf: "https://drive.google.com/file/d/1Cs2_2LXhO_vWp9GYXIj6GeDb5p4s7PVM/view?usp=sharing"}, */
             ];
 
-            /* ----------------------------------------------------------------------
-               1. NAVEGACIÓN Y MENÚ HAMBURGUESA
-               ---------------------------------------------------------------------- 
-            const hamburgerBtn = document.getElementById('hamburgerBtn');
-            const navMenu = document.getElementById('navMenu');
-
-            hamburgerBtn.addEventListener('click', () => {
-                navMenu.classList.toggle('active');
-            });
-
-            document.querySelectorAll('.nav-link').forEach(link => {
-                link.addEventListener('click', () => {
-                    navMenu.classList.remove('active');
-                });
-            });
-*/
-            /* ----------------------------------------------------------------------
-               2. PREGUNTAS FRECUENTES - ACCORDION Y BUSCADOR
-               ---------------------------------------------------------------------- */
-            const accordionHeaders = document.querySelectorAll('.accordion-header');
-            const faqSearch = document.getElementById('faqSearch');
-            const faqItems = document.querySelectorAll('.accordion-item');
-
-            accordionHeaders.forEach(header => {
-                header.addEventListener('click', () => {
-                    const item = header.parentElement;
-                    const content = item.querySelector('.accordion-content');
-
-                    if (item.classList.contains('active')) {
-                        item.classList.remove('active');
-                        content.style.maxHeight = null;
-                    } else {
-                        document.querySelectorAll('.accordion-item').forEach(i => {
-                            i.classList.remove('active');
-                            i.querySelector('.accordion-content').style.maxHeight = null;
-                        });
-                        item.classList.add('active');
-                        content.style.maxHeight = content.scrollHeight + "px";
-                    }
-                });
-            });
+       
+         
 
             faqSearch.addEventListener('input', (e) => {
                 const term = e.target.value.toLowerCase();
@@ -1924,85 +1091,11 @@
             mapSearch.addEventListener('input', filterPoints);
             mapFilter.addEventListener('change', filterPoints);
 
-            /* ----------------------------------------------------------------------
-               4. RENDERIZADO DE VIDEOS Y MODAL
-               ---------------------------------------------------------------------- */
-            const videosContainer = document.getElementById('videosContainer');
-            const videoModal = document.getElementById('videoModal');
-            const videoIframe = document.getElementById('videoIframe');
-            const closeVideoModal = document.getElementById('closeVideoModal');
+           
 
-            videosData.forEach(v => {
-                const card = document.createElement('div');
-                card.className = 'video-card';
-                card.innerHTML = `
-                    <div class="video-thumb" data-embed="${v.embed}">
-                        <img src="https://images.unsplash.com/photo-1508974239320-0a029497e820?auto=format&fit=crop&w=600&q=80" alt="${v.titulo}">
-                        <div class="play-btn"><i class="fa-solid fa-play"></i></div>
-                        <span class="video-badge">${v.duracion}</span>
-                    </div>
-                    <div class="video-info">
-                        <span class="video-category">${v.categoria}</span>
-                        <h3>${v.titulo}</h3>
-                        <p>${v.desc}</p>
-                    </div>
-                `;
+          
 
-                card.querySelector('.video-thumb').addEventListener('click', () => {
-                    videoIframe.src = v.embed + "?autoplay=1";
-                    videoModal.classList.add('active');
-                });
-
-                videosContainer.appendChild(card);
-            });
-
-            closeVideoModal.addEventListener('click', () => {
-                videoModal.classList.remove('active');
-                videoIframe.src = "";
-            });
-
-            videoModal.addEventListener('click', (e) => {
-                if (e.target === videoModal) {
-                    videoModal.classList.remove('active');
-                    videoIframe.src = "";
-                }
-            });
-
-            /* ----------------------------------------------------------------------
-               5. RENDERIZADO DE RESOLUCIONES
-               ---------------------------------------------------------------------- */
-            const docsContainer = document.getElementById('docsContainer');
-
-            resolucionesData.forEach(doc => {
-                const card = document.createElement('div');
-                card.className = 'doc-card';
-                card.innerHTML = `
-                    <div class="doc-header">
-                        <div class="doc-icon"><i class="fa-solid fa-file-pdf"></i></div>
-                        <div class="doc-meta">
-                            <span class="doc-num">Res. ${doc.numero}</span>
-                            <span class="doc-date">${doc.fecha}</span>
-                        </div>
-                    </div>
-                    <h3>${doc.titulo}</h3>
-                    <p>${doc.descripcion}</p>
-                    <div class="doc-actions">
-                        <a href="${doc.pdf}" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-eye"></i> Ver</a>
-                        <a href="${doc.pdf}" download class="btn btn-primary"><i class="fa-solid fa-download"></i> PDF</a>
-                    </div>
-                `;
-                docsContainer.appendChild(card);
-            });
-
-            /* ----------------------------------------------------------------------
-               6. FORMULARIO DE CONTACTO Y VALIDACIÓN
-               ---------------------------------------------------------------------- */
-            const contactForm = document.getElementById('contactForm');
-            contactForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                alert('¡Gracias por enviar tu consulta! Tu solicitud ha sido registrada correctamente. Un asesor institucional te responderá al correo ingresado.');
-                contactForm.reset();
-            });
+          
 
             /* ----------------------------------------------------------------------
                7. ANIMACIÓN DE CONTADORES NUMÉRICOS
